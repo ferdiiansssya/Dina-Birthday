@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<script>
+    // Menambahkan header untuk melewati halaman peringatan ngrok
+    fetch(window.location.href, {
+        headers: {
+            'ngrok-skip-browser-warning': 'true'
+        }
+    });
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Happy 22th Birthday, My Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Tombol musik di pojok -->
+    <button id="musicToggle" class="music-btn">🔇 Music Off</button>
+
+    <div class="card">
+        <div class="hero">
+            <div class="cake-icon">🎂✨</div>
+            <h1>Happy 22th Birthday!</h1>
+            <p>Today, this pretty girl turns 22!</p>
+        </div>
+
+        <div class="content">
+            <div class="message-box" id="greetingBox">
+                <p>happy birthday my love, semoga jdi orang yang lebih baik lagi, maaf iniji yg bisa kukasih ilysm
+                    than enough❤️</p>
+            </div>
+
+            <!-- Memory 1: First picture -->
+            <div class="memory-card" id="memory1">
+                <div class="memory-header">
+                    <h3>Our First Picture</h3>
+                </div>
+                <p class="memory-desc">This was our first picture, a moment I'll always remember</p>
+                <div class="photo-placeholder">
+                    <div class="polaroid">
+                        <div class="polaroid-img photo-1"></div>
+                        <div class="polaroid-caption">first pic • 2022</div>
+                    </div>
+                </div>
+                <button class="click-btn" data-memory="1">klik ini &nbsp;&lt;3</button>
+                <div class="hidden-message" id="hiddenMsg1">That shy smile changed my whole world. I knew from that
+                    moment you were special.</div>
+            </div>
+
+            <!-- Memory 2: Grateful moments -->
+            <div class="memory-card" id="memory2">
+                <div class="memory-header">
+                    <h3>Every Moment Since</h3>
+                </div>
+                <p class="memory-desc">I'm so grateful for every moment we've shared since then</p>
+                <div class="photo-placeholder">
+                    <div class="polaroid">
+                        <div class="polaroid-img photo-2"></div>
+                        <div class="polaroid-caption">countless laughs • 2024</div>
+                    </div>
+                </div>
+                <button class="click-btn" data-memory="2">klik ini &lt;3</button>
+                <div class="hidden-message" id="hiddenMsg2">Every second with you is my favorite memory. You made my
+                    world brighter.</div>
+            </div>
+
+            <!-- Memory 3: Foto ketiga (TAMBAHAN) -->
+            <div class="memory-card" id="memory3">
+                <div class="memory-header">
+                    <h3>Our Beautiful Journey</h3>
+                </div>
+                <p class="memory-desc">Every sunset looks better when you're by my side</p>
+                <div class="photo-placeholder">
+                    <div class="polaroid">
+                        <div class="polaroid-img photo-3"></div>
+                        <div class="polaroid-caption">sunset together • 2024</div>
+                    </div>
+                </div>
+                <button class="click-btn" data-memory="3">klik ini &lt;3</button>
+                <div class="hidden-message" id="hiddenMsg3">You make my world colorful. Thank you for
+                    every beautiful moment.</div>
+            </div>
+
+            <!-- Memory 4: Foto keempat (TAMBAHAN) -->
+            <div class="memory-card" id="memory4">
+                <div class="memory-header">
+                    <h3>My Greatest Treasure</h3>
+                </div>
+                <p class="memory-desc">You are the best thing that ever happened to me</p>
+                <div class="photo-placeholder">
+                    <div class="polaroid">
+                        <div class="polaroid-img photo-4"></div>
+                        <div class="polaroid-caption">my happiness • 2025</div>
+                    </div>
+                </div>
+                <button class="click-btn" data-memory="4">klik ini &lt;3</button>
+                <div class="hidden-message" id="hiddenMsg4">You're not just my love, you're my home. Happy 22th
+                    birthday, my everything!</div>
+            </div>
+
+            <!-- Surprise extra: birthday open it -->
+            <div class="surprise-area">
+                <div class="surprise-header">
+                    <span>🎁</span>
+                    <h3>A little surprise for you</h3>
+                </div>
+                <button class="surprise-btn" id="openSurpriseBtn">[open it &lt;3]</button>
+                <div id="surpriseReveal" class="surprise-hidden">
+                    <div class="surprise-content">
+                        <p>For my 22-year-old angel</p>
+                        <p>Kutau sampai di titik ini nd mudah, ada sakit yg mungkin nd pernah betul-betul hilang, ada
+                            maaf yg diucapkan berkali-kali, tapi tetap kurang terasa. hari ini nd kusuruhji lupakan
+                            semuanya mintaja untuk tetap sama-sama bukan untuk mengulang yg lalu tapi untuk buat masa
+                            depan yg nd perlu di sesali. You are the most beautiful chapter of my life. Happy birthday,
+                            my everything! ❤️🎂
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="birthday-footer">
+                <p>with love, always & forever</p>
+            </footer>
+        </div>
+    </div>
+
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Audio musik -->
+    <audio id="birthdayMusic" loop preload="auto">
+        <source src="birthday-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
