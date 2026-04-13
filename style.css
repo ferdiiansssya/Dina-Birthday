@@ -333,7 +333,7 @@ body::before {
 /* PERBAIKAN 2 - OVERFLOW HIDDEN UNTUK SUDUT MELENGKUNG */
 .surprise-content {
     background: white;
-    border-radius: 10px;
+    border-radius: 25px;
     padding: 20px;
     box-shadow: 0 12px 22px rgba(0, 0, 0, 0.1);
     overflow: hidden;
